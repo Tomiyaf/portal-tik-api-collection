@@ -1,0 +1,25 @@
+info:
+  name: Close Gate
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/gate/close"
+  body:
+    type: json
+    data: |-
+      {
+        "gate_id": 1,
+        "access_method": "mobile",
+        "notes": "Request close from mobile device"
+      }
+  auth:
+    type: bearer
+    token: 1|XWw9O0w5wkC7OWcCAvmcTelgLrL2SvWxe0GueZFz825e9c51
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

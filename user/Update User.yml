@@ -1,0 +1,23 @@
+info:
+  name: Update User
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/users/3"
+  body:
+    type: json
+    data: |-
+      {
+        "status": "active"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

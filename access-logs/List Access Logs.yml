@@ -1,0 +1,17 @@
+info:
+  name: List Access Logs
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/access-logs"
+  auth:
+    type: bearer
+    token: 1|XWw9O0w5wkC7OWcCAvmcTelgLrL2SvWxe0GueZFz825e9c51
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

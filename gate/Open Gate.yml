@@ -1,0 +1,23 @@
+info:
+  name: Open Gate
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/gate/open"
+  body:
+    type: json
+    data: |-
+      {
+        "gate_id": 1,
+        "access_method": "mobile",
+        "notes": "Request open from mobile device"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
