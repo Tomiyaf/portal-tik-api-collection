@@ -6,7 +6,9 @@ info:
 http:
   method: GET
   url: "{{baseUrl}}/users/4/ktm"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

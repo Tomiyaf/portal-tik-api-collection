@@ -2,7 +2,7 @@ name: potal tik
 variables:
   - name: baseUrl
     value: http://localhost:8000/api
-  - name: token
-    value: 2|iNNLzblLD71u44R9ILxOTdr0wJ35WyHnk3LYfhKl6b4fb423
-  - name: student
-    value: 1|t8WvaJmtcsmVCCyN3rE2TWtxPjUG5AzXoprEA3s63f833dd7
+  - secret: true
+    name: token
+  - secret: true
+    name: student

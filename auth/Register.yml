@@ -6,6 +6,27 @@ info:
 http:
   method: POST
   url: "{{baseUrl}}/auth/register"
+  body:
+    type: multipart-form
+    data:
+      - name: full_name
+        type: text
+        value: test
+      - name: email
+        type: text
+        value: testt@example.com
+      - name: npm_nip
+        type: text
+        value: "22222"
+      - name: password
+        type: text
+        value: test1234
+      - name: password_confirmation
+        type: text
+        value: test1234
+      - name: ktm
+        type: text
+        value: ""
   auth: inherit
 
 settings:

@@ -6,7 +6,9 @@ info:
 http:
   method: DELETE
   url: "{{baseUrl}}/users/4"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

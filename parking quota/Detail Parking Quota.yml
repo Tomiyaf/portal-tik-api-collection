@@ -6,7 +6,9 @@ info:
 http:
   method: GET
   url: "{{baseUrl}}/parking-quota"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{student}}"
 
 settings:
   encodeUrl: true

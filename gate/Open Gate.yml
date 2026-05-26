@@ -14,7 +14,9 @@ http:
         "access_method": "mobile",
         "notes": "Request open from mobile device"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

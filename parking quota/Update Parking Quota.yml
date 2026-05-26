@@ -6,7 +6,9 @@ info:
 http:
   method: PATCH
   url: "{{baseUrl}}/parking-quota"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true
